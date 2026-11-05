@@ -1,0 +1,185 @@
+* {
+  box-sizing: border-box;
+  margin: 0; /* outside space */
+  padding: 0; /*inside space */
+}
+
+body { /*ada*/
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('kaabah.avif'); /* image overlay dark */ 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  color: #212529;
+  line-height: 1.6; /* line spacing */ 
+  padding: 24px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.outlined-title { /* border on text */  /*ada*/
+  color: white; 
+  -webkit-text-stroke: 2px black; 
+}
+
+nav { /*ada*/
+  background-color: #ffffff;
+  padding: 12px 20px; 
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.1);;
+  margin-bottom: 24px; /* space below nav bar */ 
+  display: flex;
+  gap: 12px; /* space between lines */
+  align-items: center;
+  font-size: 1rem; /* std text size */
+}
+
+nav strong { /*ada*/
+  color: #0f5132;
+}
+
+nav a { /*ada*/
+  color: #6c757d;
+  text-decoration: none;
+  font-weight: 500; /* semi bold */ 
+  transition: color 0.2s ease;
+}
+
+nav a:hover { /*ada*/
+  color: #0f5132;
+  text-decoration: underline;
+}
+
+h1 { /*ada*/
+  font-size: 1.8rem; /* large title */
+  color: black;
+  margin-bottom: 20px;
+}
+
+h2 { /*ada*/
+  font-size: 1.2rem; 
+  color: #0f5132;
+  margin-bottom: 12px;
+}
+
+h3 { /*ada*/
+  font-size: 1rem;
+  color: #212529;
+}
+
+hr { /*ada*/ 
+  border: none;
+  border-top: 1px solid #dee2e6;
+  margin: 24px 0;
+}
+
+section { /*ada*/
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.1);;
+  margin-bottom: 20px;
+}
+
+section div[style*="border: 1px solid black"] {
+  border: 1px solid #dee2e6 !important; /* important = forces the style */
+  background-color: #fafbfc;
+  border-radius: 8px;
+  padding: 16px !important;
+  margin-bottom: 16px !important;
+}
+
+div { /*ada*/
+  border: 1px solid #dee2e6 !important;
+  background-color: #fafbfc;
+  border-radius: 8px;
+  padding: 16px !important;
+  margin-bottom: 16px !important;
+}
+
+form { /*ada*/
+  display: flex; 
+  flex-direction: column;
+  gap: 12px;
+}
+
+form div { /*ada*/ 
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+label { /*ada*/
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #212529;
+}
+
+input[type="text"] { /*ada*/
+  padding: 10px 14px;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  width: 100%;
+  max-width: 400px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input[type="text"]:focus { /*ada*/
+  outline: none;
+  border-color: #0f5132;
+  box-shadow: 0 0 0 3px rgba(15, 81, 50, 0.15);
+}
+
+button { /*ada*/ 
+  background-color: #0f5132;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  width: fit-content;
+}
+
+button:hover { /*ada*/
+  background-color: #146c43;
+}
+
+button:active {
+  transform: scale(0.98); 
+}
+
+table button { /*ada*/
+  padding: 6px 12px;
+  font-size: 0.85rem;
+  margin-right: 6px;
+}
+
+table { /*ada*/
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0;
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #dee2e6;
+}
+
+th, td { /*yang dekat table activity reminders*/
+  padding: 12px 16px;
+  text-align: left;
+  font-size: 0.95rem;
+  border-bottom: 1px solid #dee2e6;
+}
+
+th { /*ada*/
+  background-color: #f1f3f5;
+  color: #0f5132;
+  font-weight: 600;
+}

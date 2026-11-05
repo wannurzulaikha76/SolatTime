@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Solat Time - Daily Reminders</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Home</a> 
+    <strong>Daily Reminders</strong>
+  </nav>
+
+  <hr>
+
+  <h1 class="outlined-title">Manage Daily Activity Reminders</h1>
+
+  <form id="reminderForm">
+    <input type="hidden" id="editIndex" value="-1">
+    <div>
+      <label for="titleInput">Reminder Title / Activity:</label>
+      <input type="text" id="titleInput" placeholder="e.g. Read Surah Al-Kahf" required>
+      <label for="timeInput">Target Time / Day:</label>
+      <input type="text" id="timeInput" placeholder="e.g. Friday Before Dhuhr" required><br>
+      <button type="submit" id="submitBtn">Add Reminder</button>
+    </div>
+  </form>
+
+  <hr>
+
+  <h1 class="outlined-title">📩 Saved Reminders List</h1>
+  <table>
+      <tr>
+        <th>No.</th>
+        <th>Activity Title</th>
+        <th>Target Time / Day</th>
+        <th>Actions</th>
+      </tr>
+    <tbody id="reminderTableBody">-</tbody>
+  </table>
+
+  <script src="reminders.js"></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Solat Time - Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <strong>Home</strong> | 
+    <a href="reminders.html">Daily Reminders</a>
+  </nav>
+
+  <hr> 
+
+  <h1 class="outlined-title">Solat Time Application</h1>
+
+  <section>
+    <h2>🧭 Current Time & Date (Malaysia)</h2>
+    <p><strong>Date:</strong> <span id="currentDate">-</span></p>
+    <p><strong>Time:</strong> <span id="currentTime">-</span></p>
+  </section>
+
+  <hr>
+
+  <section>
+    <h2>📍 Search Location</h2>
+    <form id="searchForm">
+      <label for="cityInput">City (Not State):</label>
+      <input type="text" id="cityInput" value="Kuala Lumpur" required>
+      <label for="countryInput">Country:</label>
+      <input type="text" id="countryInput" value="Malaysia" required><br>
+      <button type="submit">Search Solat Time</button>
+    </form>
+  </section>
+
+  <hr>
+
+  <section id="solatSection" style="display: none;">
+    <h2>🕋 Prayer Times for <span id="displayLocation">-</span></h2>
+    <p><strong>Gregorian Date:</strong> <span id="gregorianDate">-</span></p>
+    <p><strong>Hijri Date:</strong> <span id="hijriDate">-</span></p><br>
+
+    <div>
+    <h3>⏳ Next Prayer: <span id="nextPrayerName">-</span> (<span id="nextPrayerTime">-</span>)</h3>
+      <p><strong>Countdown:</strong> <span id="countdownTimer">00h 00m 00s</span></p>
+    </div>
+
+    <div>
+      <h3>💡 Religious Activity Suggestion:</h3>
+      <p id="suggestionText">-</p>
+    </div>
+
+    <div>
+      <h3>📢 Prayer Times Based On Location Entered</h3><br>
+      <table border="1" cellpadding="6">
+
+      <thead>
+        <tr><th>Prayer</th><th>Time</th></tr>
+      </thead>
+
+      <tbody>
+        <tr><td>Imsak</td><td id="timeImsak">-</td></tr>
+        <tr><td>Fajr (Subuh)</td><td id="timeFajr">-</td></tr>
+        <tr><td>Sunrise (Syurooq)</td><td id="timeSunrise">-</td></tr>
+        <tr><td>Dhuhr (Zohor)</td><td id="timeDhuhr">-</td></tr>
+        <tr><td>Asr (Asar)</td><td id="timeAsr">-</td></tr>
+        <tr><td>Maghrib</td><td id="timeMaghrib">-</td></tr>
+        <tr><td>Isha</td><td id="timeIsha">-</td></tr>
+      </tbody>
+
+      </table>
+    </div>
+  </section>
+
+  <script src="index.js"></script>
+</body>
+</html>
